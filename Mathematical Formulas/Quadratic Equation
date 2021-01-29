@@ -1,0 +1,70 @@
+using System;
+
+namespace Quadratic_Equation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter in the first coefficient (X^2): ");
+            double ainQuad = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter in the second coefficient (X): ");
+            double binQuad = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter in the final constant: ");
+            double cinQuad = Convert.ToDouble(Console.ReadLine());
+
+            double nonegative = binQuad * binQuad - 4 * ainQuad * cinQuad;
+            double twotimesa = 2 * ainQuad;
+
+            if (nonegative < 0)
+            {
+                double negateNegative = Math.Sqrt(-1 * (binQuad * binQuad - 4 * ainQuad * cinQuad));
+
+                double negativex = Math.Floor((binQuad-negateNegative) / twotimesa);
+                Console.WriteLine($"(b-SQRT(b^2-4ac))/2a is {negativex}");
+
+                double positivex = Math.Round((binQuad + negateNegative) / twotimesa);
+                Console.WriteLine($"(b+SQRT(b^2-4ac))/2a is {positivex}");
+            }
+            
+            else if (nonegative == 0)
+            {
+                double negativex = Math.Floor(binQuad / twotimesa);
+                Console.WriteLine($"(b-SQRT(b^2-4ac))/2a is {negativex}");
+
+                double positivex = Math.Round(binQuad / twotimesa);
+                Console.WriteLine($"(b+SQRT(b^2-4ac))/2a is {positivex}");
+            }
+
+            else if (nonegative > 0)
+            {
+                double negativex = (binQuad - Math.Sqrt(nonegative)) / twotimesa;
+                Console.WriteLine($"(b-SQRT(b^2-4ac))/2a is {negativex}");
+
+                double positivex = (binQuad + Math.Sqrt(nonegative)) / twotimesa;
+                Console.WriteLine($"(b+SQRT(b^2-4ac))/2a is {positivex}");
+            }
+            return;
+
+            //if (nonegative > 0)
+
+
+            //Console.WriteLine("\nAnswer impossible due to an imaginary number resulting from\n" +
+            //    "the expression SQRT(b^2 - 4*a * c)");
+
+            /*
+            double prepositivex = binQuad + Math.Sqrt(binQuad * binQuad - 4 * ainQuad * cinQuad);
+
+            double positivex = (prepositivex / (2 * ainQuad));
+            Console.WriteLine($"(b+SQRT(b^2-4ac))/2a is {positivex}");
+
+            double prenegativex = binQuad - Math.Sqrt(binQuad * binQuad - 4 * ainQuad * cinQuad);
+
+            double negativex = (prenegativex / (2 * ainQuad));
+            Console.WriteLine($"(b-SQRT(b^2-4ac))/2a is {negativex}");
+            */
+        }
+    }
+}
