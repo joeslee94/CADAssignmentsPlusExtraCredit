@@ -1,0 +1,41 @@
+using System;
+
+namespace Area_of_Triangle_with_Given_Lengths
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter in a value in for the first side of the triangle: ");
+            double sideOne = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter in a value in for the first side of the triangle: ");
+            double sideTwo = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter in a value in for the first side of the triangle: ");
+            double sideThree = Convert.ToDouble(Console.ReadLine());
+
+
+            if (sideOne >= 0)
+            {
+                if (sideTwo >= 0)
+                {
+                    if (sideThree >= 0)
+                    {
+                        double p = (sideOne + sideTwo + sideThree) / 2;
+                        double area = Math.Sqrt(p * (p - sideOne)*(p - sideTwo)*(p - sideThree));
+                        
+                        //if a value is too high it says number is NaN
+
+                        Console.WriteLine($"The area of the triangle is {area}");
+                    }
+
+                }
+            }
+            else if (sideOne < 0)
+            {
+                Console.WriteLine("You cannot have a negative area. \nDebug the Program Again");
+            }
+        }
+    }
+}
