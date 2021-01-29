@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Average_a_Non_Specific_Number_of_Scores
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter in a list of numbers split by a space");
+            string[] nums = Console.ReadLine().Split(' ');
+
+            List<decimal> numList = new List<decimal>(
+                Array.ConvertAll(nums, numTemp =>
+                Convert.ToDecimal(numTemp)));
+
+            decimal numTotal = numList.Sum();
+            decimal countTotal = numList.Count();
+            decimal averageofNums = numTotal / countTotal;
+
+            Console.WriteLine($"The total of the scores is {numTotal}.");
+            Console.WriteLine($"The number of testscores is {countTotal}.");
+            Console.WriteLine($"The average of the scores is {averageofNums}.");
+
+            if (averageofNums >= 90)
+            {
+                Console.WriteLine("The average is within the A range.");
+            }
+            else if (averageofNums >= 80 && averageofNums < 90)
+            {
+                Console.WriteLine("The average is within the B range.");
+            }
+            else if (averageofNums >= 70 && averageofNums < 80)
+            {
+                Console.WriteLine("The average is within the C range.");
+            }
+            else if (averageofNums >= 60 && averageofNums < 70)
+            {
+                Console.WriteLine("The average is within the D range.");
+            }
+            else if (averageofNums >= 50 && averageofNums < 60)
+            {
+                Console.WriteLine("The average is within the F range.");
+            }
+            return;
+        }
+    }
+}
