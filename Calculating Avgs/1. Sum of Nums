@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Extra_Credit_2A_Calculating_Averages
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter in a list of numbers split by a space. (Example 1 2 3 4 5 6)");
+            string[] nums = Console.ReadLine().Split(' ');
+            
+            List<decimal> numList = new List<decimal>(
+                Array.ConvertAll(nums, numTemp =>
+                Convert.ToDecimal(numTemp)));
+            
+            decimal numTotal = numList.Sum();
+           
+            Console.WriteLine($"The sum of the numbers is {numTotal}");
+        }
+    }
+}
