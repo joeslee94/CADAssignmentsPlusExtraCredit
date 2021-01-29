@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Average_of_Ten_Scores
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter in a list of numbers split by a space. (Example 1 2 3 4 5 6)");
+            string[] nums = Console.ReadLine().Split(' ');
+
+            List<decimal> numList = new List<decimal>(
+                Array.ConvertAll(nums, numTemp =>
+                Convert.ToDecimal(numTemp)));
+
+            decimal numTotal = numList.Sum();
+            decimal countTotal = numList.Count();
+            decimal averageofNums = numTotal / countTotal;
+
+            
+            Console.WriteLine($"The total of the scores is {numTotal}");
+            Console.WriteLine($"The number of testscores is {countTotal}");
+            Console.WriteLine($"The average of the scores is {averageofNums}");
+
+        }
+    }
+}
