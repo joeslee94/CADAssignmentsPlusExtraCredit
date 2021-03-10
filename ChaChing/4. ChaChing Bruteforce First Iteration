@@ -1,0 +1,92 @@
+using System;
+
+namespace Changed_ChaChing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal paid;
+            decimal cost;
+
+            //need a try catch to loop infinitely until they insert a valid input
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Enter in the cost of the item: $");
+                    decimal checkCost = decimal.Parse(Console.ReadLine());
+                    cost = Math.Round(checkCost,2);
+
+                    Console.Write("Amount received: $");
+                    decimal checkPaid = decimal.Parse(Console.ReadLine());
+                    paid = Math.Round(checkPaid, 2);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                    return;
+                }
+                break;
+            }
+
+            decimal change = paid - cost;
+
+            if(change == 0)
+            {
+                Console.WriteLine("Thank you for your purchase!");
+                return;
+            }
+
+            //what about if they enter in a symbol or something other than a decimal
+            while (change < 0)
+            {
+                Console.Clear();
+                Console.Write("You did not pay enough.\n");
+
+                Console.Write("Please re-enter in the cost of the item: $");
+                cost = decimal.Parse(Console.ReadLine());
+                Math.Round(cost, 2);
+
+                Console.Write("Please re-enter a higher amount of money: $");
+                paid = decimal.Parse(Console.ReadLine());
+                Math.Round(paid, 2);
+
+                change = paid - cost;
+            }
+
+            Console.WriteLine($"Your change is ${Math.Round(change, 3)}");
+
+            decimal twenties = Math.Floor(change / 20);
+            Console.Write($"Give them {twenties} $20 bill");
+
+            decimal howmanytens = (change - twenties * 20) / 10;
+            decimal tens = Math.Floor(howmanytens);
+            Console.Write($"\nGive them {tens} $10 bill");
+
+            decimal howmanyfives = (change - twenties * 20 - tens * 10) / 5;
+            decimal fives = Math.Floor(howmanyfives);
+            Console.Write($"\nGive them {fives} $5 bill");
+
+            decimal howmanyones = change - twenties * 20 - tens * 10 - fives * 5;
+            decimal ones = Math.Floor(howmanyones);
+            Console.Write($"\nGive them {ones} $1 bill");
+
+            decimal howmanyquarters = (howmanyones - ones) * 4;
+            decimal quarters = Math.Floor(howmanyquarters);
+            Console.Write($"\nGive them {quarters} quarter(s)");
+
+            decimal howmanydimes = (howmanyones - ones - (quarters / 4)) * 10;
+            decimal dimes = Math.Floor(howmanydimes);
+            Console.Write($"\nGive them {dimes} dime(s)");
+
+            decimal howmanynickels = (howmanyones - ones - (quarters / 4) - (dimes / 10)) * 20;
+            decimal nickels = Math.Floor(howmanynickels);
+            Console.Write($"\nGive them {nickels} nickel(s)");
+
+            decimal howmanycents = (howmanyones - ones - (quarters / 4) - (dimes / 10) - (nickels / 20)) * 100;
+            decimal cents = Math.Floor(howmanycents);
+            Console.Write($"\nGive them {cents} penny(ies)");
+        }
+    }
+}

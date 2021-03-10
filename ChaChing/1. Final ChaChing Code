@@ -1,0 +1,156 @@
+using System;
+
+namespace ChaChing_Finalized
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ChangeDue();
+        }
+        private static void ChangeDue()
+        {
+            double cost;
+            double paid;
+
+            while (true)
+            //makes sure that the input for cost of item is a valid dollar amount
+            {
+                try
+                {
+                    Console.Write("Enter in the cost of the item: $");
+                    double checkCost = double.Parse(Console.ReadLine());
+                    cost = Math.Round(checkCost, 2);
+                    if (cost >= 0)
+                    {
+                        break;
+                    }
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                }
+            }
+
+            while (true)
+            //makes sure that the input for paid amount is a valid dollar amount
+            {
+                try
+                {
+                    Console.Write("Enter in your payment amount: $");
+                    double checkPaid = double.Parse(Console.ReadLine());
+                    paid = Math.Round(checkPaid, 2);
+                    if (paid >= 0)
+                    {
+                        break;
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                }
+            }
+
+            double change = paid - cost;
+            //calculates the change due to the customer
+
+            if (change == 0)
+            //if the payment and cost is equal
+            {
+                Console.WriteLine("Thank you for your purchase!");
+                return;
+            }
+
+            while (change < 0)
+            //if the customer pays less than what the cost of the item is
+            {
+                Console.Clear();
+                Console.Write("You did not pay enough.\n");
+
+                while (true)
+                {
+                    try
+                    {
+                        Console.Write("Re-enter in the cost of the item: $");
+                        double checkCost = double.Parse(Console.ReadLine());
+                        cost = Math.Round(checkCost, 2);
+                        if (cost >= 0)
+                        {
+                            break;
+                        }
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                    }
+                }
+
+                while (true)
+                {
+                    try
+                    {
+                        Console.Write("Re-enter your payment amount: $");
+                        double checkPaid = double.Parse(Console.ReadLine());
+                        paid = Math.Round(checkPaid, 2);
+                        if (paid >= 0)
+                        {
+                            break;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                    }
+                }
+                change = paid - cost;
+                //allows for the loop to execute until the while condition is met
+            }
+
+            Console.WriteLine($"The change due is ${Math.Round(change, 2)}");
+
+            double numberOfTwenties = numberofBills(ref change, 20);
+            double numberOfTens = numberofBills(ref change, 10);
+            double numberOfFives = numberofBills(ref change, 5);
+            double numberOfOnes = numberofBills(ref change, 1);
+            double numberOfQuarters = numberofBills(ref change, 0.25);
+            double numberOfDimes = numberofBills(ref change, 0.10);
+            double numberOfNickels = numberofBills(ref change, 0.05);
+            double numberOfPennies = numberofBills(ref change, 0.01);
+
+            Console.WriteLine($"Number of Twenties: {numberOfTwenties}");
+            Console.WriteLine($"Number of Tens: {numberOfTens}");
+            Console.WriteLine($"Number of Fives: {numberOfFives}");
+            Console.WriteLine($"Number of Ones: {numberOfOnes}");
+            Console.WriteLine($"Number of Quarters: {numberOfQuarters}");
+            Console.WriteLine($"Number of Dimes: {numberOfDimes}");
+            Console.WriteLine($"Number of Nickels: {numberOfNickels}");
+            Console.WriteLine($"Number of Pennies: {numberOfPennies}");
+            //from 0.01 to 0.07 subtracted from 0.10 the change works
+            //from 0.08 to 0.09 subtracted from 0.10 the change does not work
+        }
+
+        private static int numberofBills(ref double change, double valueofcurrency)
+        {
+            int numofChange = 0;
+            //the counter for each bill or coin is initially 0
+
+            while (change >= valueofcurrency)
+            //This while loop allows me to iterate until the value of the currency
+            //exceeds the value of the change.
+            //Once the value of the currency exceeds the value of change, the next value
+            //of currency is iterated through the while loop.
+            //The ref keyword allows the program to reference the last value of change created
+            //from the change -= valueofcurrency statement.
+            {
+                change -= valueofcurrency;
+                //the value of the currency is subtracted from the value of change
+                //is also equal to change = change - valueofcurrency
+                numofChange++;
+                //each iteration of the while loop will add 1 more bill to whichever
+                //value of currency is being iterated through
+            }
+            return numofChange;
+            //returns the number of bills or coins back to the console
+        }
+    }
+}

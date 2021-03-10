@@ -1,0 +1,101 @@
+using System;
+
+namespace ChaChing_TryCatch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            changeCalculated();
+        }
+        private static void changeCalculated()
+        {
+            double change = paymentAmount() - costofItem();
+            if (change == 0)
+            {
+                Console.WriteLine("Thank you for your purchase!");
+                return;
+            }
+
+            while (change < 0)
+            {
+                Console.Clear();
+                Console.Write("You did not pay enough.\n");
+                change = paymentAmount() - costofItem();
+            }
+
+            Console.WriteLine($"The change due is ${Math.Round(change, 2)}");
+
+            double numberOfTwenties = numberofBills(ref change, 20);
+            double numberOfTens = numberofBills(ref change, 10);
+            double numberOfFives = numberofBills(ref change, 5);
+            double numberOfOnes = numberofBills(ref change, 1);
+            double numberOfQuarters = numberofBills(ref change, 0.25);
+            double numberOfDimes = numberofBills(ref change, 0.10);
+            double numberOfNickels = numberofBills(ref change, 0.05);
+            double numberOfPennies = numberofBills(ref change, 0.01);
+
+            Console.WriteLine($"Number of Twenties: {numberOfTwenties}");
+            Console.WriteLine($"Number of Tens: {numberOfTens}");
+            Console.WriteLine($"Number of Fives: {numberOfFives}");
+            Console.WriteLine($"Number of Ones: {numberOfOnes}");
+            Console.WriteLine($"Number of Quarters: {numberOfQuarters}");
+            Console.WriteLine($"Number of Dimes: {numberOfDimes}");
+            Console.WriteLine($"Number of Nickels: {numberOfNickels}");
+            Console.WriteLine($"Number of Pennies: {numberOfPennies}");
+        }
+        private static int numberofBills(ref double change, double valueofcurrency)
+        {
+            int numofChange = 0;
+
+            while (change >= valueofcurrency)
+            {
+                change -= valueofcurrency;
+                numofChange++;
+            }
+            return numofChange;
+        }
+        private static double paymentAmount()
+        {
+            double paid;
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Enter in your payment amount: $");
+                    double checkPaid = double.Parse(Console.ReadLine());
+                    paid = Math.Round(checkPaid, 2);
+                    if (paid >= 0)
+                    {
+                        return paid;
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                }
+            }
+        }
+        private static double costofItem()
+        {
+            double cost;
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Enter in the cost of the item: $");
+                    double checkCost = double.Parse(Console.ReadLine());
+                    cost = Math.Round(checkCost, 2);
+                    if (cost > 0)
+                    {
+                        return cost;
+                    }
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You did not enter in a valid dollar amount.\n");
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+using System;
+
+namespace Changed_ChaChing_Try_Catch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter in the cost of the item: $");
+
+            while (true)
+            {
+                try
+                {
+                    decimal checkCost = decimal.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You did not enter in a valid value.");
+                    return;
+                }
+
+                Console.Write("Amount received: $");
+
+                try
+                {
+                    decimal checkPaid = decimal.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You did not enter in a valid value.");
+                    return;
+                }
+                break;
+            }
+        }
+    }
+}
