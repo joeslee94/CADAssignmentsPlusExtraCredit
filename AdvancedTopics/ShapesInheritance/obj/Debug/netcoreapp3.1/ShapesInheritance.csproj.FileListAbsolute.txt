@@ -1,0 +1,13 @@
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.csprojAssemblyReference.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.AssemblyInfoInputs.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.AssemblyInfo.cs
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\bin\Debug\netcoreapp3.1\ShapesInheritance.exe
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\bin\Debug\netcoreapp3.1\ShapesInheritance.deps.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\bin\Debug\netcoreapp3.1\ShapesInheritance.runtimeconfig.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\bin\Debug\netcoreapp3.1\ShapesInheritance.runtimeconfig.dev.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\bin\Debug\netcoreapp3.1\ShapesInheritance.dll
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\bin\Debug\netcoreapp3.1\ShapesInheritance.pdb
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.dll
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.pdb
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\ShapesInheritance\obj\Debug\netcoreapp3.1\ShapesInheritance.genruntimeconfig.cache

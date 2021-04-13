@@ -1,0 +1,13 @@
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.AssemblyInfoInputs.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.AssemblyInfo.cs
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.csproj.CoreCompileInputs.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\bin\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.exe
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\bin\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.deps.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\bin\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.runtimeconfig.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\bin\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.runtimeconfig.dev.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\bin\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.dll
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\bin\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.pdb
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.dll
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.pdb
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.genruntimeconfig.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CS Ch 7 Circle, Rectangle, Square, Triangle\obj\Debug\netcoreapp3.1\Ex CS Ch 7 Circle, Rectangle, Square, Triangle.csprojAssemblyReference.cache

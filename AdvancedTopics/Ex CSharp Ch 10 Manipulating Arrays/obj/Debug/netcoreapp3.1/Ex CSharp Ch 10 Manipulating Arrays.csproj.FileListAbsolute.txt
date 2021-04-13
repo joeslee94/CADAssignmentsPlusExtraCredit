@@ -1,0 +1,13 @@
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\bin\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.exe
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\bin\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.deps.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\bin\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.runtimeconfig.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\bin\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.runtimeconfig.dev.json
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\bin\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.dll
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\bin\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.pdb
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.csprojAssemblyReference.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.AssemblyInfoInputs.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.AssemblyInfo.cs
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.csproj.CoreCompileInputs.cache
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.dll
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.pdb
+C:\Users\Joe Lee\Desktop\Programming\source\repos\CAD Assignments\Ex CSharp Ch 10 Manipulating Arrays\obj\Debug\netcoreapp3.1\Ex CSharp Ch 10 Manipulating Arrays.genruntimeconfig.cache
